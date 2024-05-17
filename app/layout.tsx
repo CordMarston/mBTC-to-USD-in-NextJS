@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "mBTC to USD",
-  description: "Convert mBTC to US",
+  title: "Convert mBTC to USD",
+  description: "Convert mBTC to USD with live Bitcoin pricing.",
 };
 
 export default function RootLayout({
