@@ -17,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+        <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_100%_100%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
         {children}
+        <div className="absolute bottom-0 left-0 p-2 bg-slate-300">
+          <a href="https://github.com/CordMarston/mbtc_cordmarston_com" target="_blank"><img src="github-logo.png" alt="Github Logo" width="100"/></a>
+        </div>
       </body>
     </html>
   );
