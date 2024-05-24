@@ -40,12 +40,12 @@ export default function ConvertPrice() {
     return (
         <div>
             <p className="text-white my-4 text-2xl">A mBTC is one thousandth of a Bitcoin...or ${mbtcPrice.toFixed(2)}</p>
-            <div className="grid grid-cols-2 gap-4 bg-gray-200 border rounded border-gray-400 text-left p-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-200 border rounded border-gray-400 text-left p-4">
                 <div className="">
-                   <input type="text" className="p-4 w-full" placeholder="mBtc Amount" onChange={calculateDollars}/>
+                   <input type="text" className="p-4 w-full text-neutral-800" placeholder="mBtc Amount" onChange={calculateDollars}/>
                 </div>
                 <div className="">
-                   <input type="text" className="p-4 w-full" placeholder="$0.00" value={'$'+dollarValue.toFixed(2)} readOnly/>
+                   <input type="text" className="p-4 w-full text-neutral-800" placeholder="$0.00" value={'$'+dollarValue.toFixed(2)} readOnly/>
                 </div>
             </div>
             <div className="text-white mt-4">

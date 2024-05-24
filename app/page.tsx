@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ConvertPrice from '@/app/components/convert';
+import ConvertPrice from '@/app/components/Convert';
 
 export default function Home() {
   return (
